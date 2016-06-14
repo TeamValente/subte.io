@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620C0E682FC78F9B54600283 /* Pods_Subte_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A7CA5FAEE34BACC676CA67 /* Pods_Subte_io.framework */; };
 		7CB99D691C4AF98C00DD8698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99D681C4AF98C00DD8698 /* AppDelegate.swift */; };
 		7CB99D6B1C4AF98C00DD8698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99D6A1C4AF98C00DD8698 /* ViewController.swift */; };
 		7CB99D6E1C4AF98C00DD8698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99D6C1C4AF98C00DD8698 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		004F37D675CCE83CAB81BA23 /* Pods-Subte.io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subte.io.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io.debug.xcconfig"; sourceTree = "<group>"; };
 		7CB99D651C4AF98C00DD8698 /* Subte.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subte.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB99D681C4AF98C00DD8698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB99D6A1C4AF98C00DD8698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7CB99D6F1C4AF98C00DD8698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB99D721C4AF98C00DD8698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CB99D741C4AF98C00DD8698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F354F30E8C7A45371B20ABC /* Pods-Subte.io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subte.io.release.xcconfig"; path = "Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io.release.xcconfig"; sourceTree = "<group>"; };
+		F6A7CA5FAEE34BACC676CA67 /* Pods_Subte_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subte_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620C0E682FC78F9B54600283 /* Pods_Subte_io.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B375CB9ED68EDE3DC8DC836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A7CA5FAEE34BACC676CA67 /* Pods_Subte_io.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CB99D5C1C4AF98C00DD8698 = {
 			isa = PBXGroup;
 			children = (
 				7CB99D671C4AF98C00DD8698 /* Subte.io */,
 				7CB99D661C4AF98C00DD8698 /* Products */,
+				869AF823DCB450805387D355 /* Pods */,
+				4B375CB9ED68EDE3DC8DC836 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Subte.io;
 			sourceTree = "<group>";
 		};
+		869AF823DCB450805387D355 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				004F37D675CCE83CAB81BA23 /* Pods-Subte.io.debug.xcconfig */,
+				9F354F30E8C7A45371B20ABC /* Pods-Subte.io.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CB99D771C4AF98C00DD8698 /* Build configuration list for PBXNativeTarget "Subte.io" */;
 			buildPhases = (
+				8AAB168EF27328386BBA9744 /* 📦 Check Pods Manifest.lock */,
 				7CB99D611C4AF98C00DD8698 /* Sources */,
 				7CB99D621C4AF98C00DD8698 /* Frameworks */,
 				7CB99D631C4AF98C00DD8698 /* Resources */,
+				2E5E0DEE5DB48161D07D748A /* 📦 Embed Pods Frameworks */,
+				8BC55038650629945A02B669 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E5E0DEE5DB48161D07D748A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AAB168EF27328386BBA9744 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC55038650629945A02B669 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CB99D611C4AF98C00DD8698 /* Sources */ = {
@@ -248,6 +323,7 @@
 		};
 		7CB99D781C4AF98C00DD8698 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004F37D675CCE83CAB81BA23 /* Pods-Subte.io.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Subte.io/Info.plist;
@@ -259,6 +335,7 @@
 		};
 		7CB99D791C4AF98C00DD8698 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F354F30E8C7A45371B20ABC /* Pods-Subte.io.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Subte.io/Info.plist;
@@ -287,6 +364,7 @@
 				7CB99D791C4AF98C00DD8698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
