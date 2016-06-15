@@ -20,10 +20,10 @@ class TabBarController: UITabBarController, UINavigationControllerDelegate {
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal)
         
         // Sets the default color of the background of the UITabBar
-        UITabBar.appearance().barTintColor = UIColor(rgba: "#FF9800")
+        UITabBar.appearance().barTintColor = UIColor(rgba: "#9E9E9E")
         
         // Sets the background color of the selected UITabBarItem (using and plain colored UIImage with the width = 1/5 of the tabBar (if you have 5 items) and the height of the tabBar)
-        UITabBar.appearance().selectionIndicatorImage = UIImage().makeImageWithColorAndSize(UIColor(rgba: "#F57C00"), size: CGSizeMake(tabBar.frame.width/3, tabBar.frame.height))
+        UITabBar.appearance().selectionIndicatorImage = UIImage().makeImageWithColorAndSize(UIColor(rgba: "#9E9E9E"), size: CGSizeMake(tabBar.frame.width/3, tabBar.frame.height))
         
         // Uses the original colors for your images, so they aren't not rendered as grey automatically.
         for item in (self.tabBar.items as [UITabBarItem]!)! {
