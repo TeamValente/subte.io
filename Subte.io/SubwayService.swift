@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import UIColor_Hex_Swift
 
 class SubwayService {
     // TODO: service methods
@@ -30,10 +31,10 @@ class SubwayService {
             let lineName = "\(subJson["LineName"])"
             let lineStatus = "\(subJson["LineStatus"])"
             let lineFrequency = "\(subJson["LineFrequency"])"
-            
+            let lineColor = getLineColor("\(subJson["LineName"])")
             
             //Cargo el punto
-            let lineaSubte = SubwayLine(name: lineName,status: lineStatus,frequency: lineFrequency)
+            let lineaSubte = SubwayLine(name: lineName, status: lineStatus,frequency: lineFrequency, color: lineColor)
             
             listadoLineas.append(lineaSubte)
             
@@ -70,6 +71,38 @@ class SubwayService {
     }
     
     
-    
+    func getLineColor(lineName: String) -> UIColor {        
+        var color: UIColor?
+        
+        switch lineName {
+         case "A":
+            color = UIColor(rgba: "#05ADDE")
+            break
+         case "B":
+            color = UIColor(rgba: "#E81526")
+            break
+         case "C":
+            color = UIColor(rgba: "#046AB4")
+            break
+         case "D":
+            color = UIColor(rgba: "#087F69")
+            break
+         case "E":
+            color = UIColor(rgba: "#6D2281")
+            break
+         case "H":
+            color = UIColor(rgba: "#FDC903")
+            break
+         case "P":
+            color = UIColor(rgba: "#FDBA2D")
+            break
+            
+         default:
+            color = UIColor(rgba: "#F56D1C")
+            break
+        }
+
+        return color!
+    }
     
 }

@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		620C0E682FC78F9B54600283 /* Pods_Subte_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A7CA5FAEE34BACC676CA67 /* Pods_Subte_io.framework */; };
 		7CB6BC631D10D002003A2CAD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6BC621D10D002003A2CAD /* TabBarController.swift */; };
-		7CB6BC651D10D301003A2CAD /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6BC641D10D301003A2CAD /* StatusTableViewController.swift */; };
 		7CB6BC671D10D47D003A2CAD /* SubwayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6BC661D10D47D003A2CAD /* SubwayService.swift */; };
+		7CB6BC6B1D10F19C003A2CAD /* PassbookCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6BC6A1D10F19C003A2CAD /* PassbookCollectionViewLayout.swift */; };
+		7CB6BC701D10F6B2003A2CAD /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6BC6F1D10F6B2003A2CAD /* StatusViewController.swift */; };
+		7CB6BC721D10F84A003A2CAD /* LineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6BC711D10F84A003A2CAD /* LineCell.swift */; };
+		7CB6BC741D110CA2003A2CAD /* UIView_Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6BC731D110CA2003A2CAD /* UIView_Borders.swift */; };
 		7CB99D691C4AF98C00DD8698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99D681C4AF98C00DD8698 /* AppDelegate.swift */; };
 		7CB99D6E1C4AF98C00DD8698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99D6C1C4AF98C00DD8698 /* Main.storyboard */; };
 		7CB99D701C4AF98C00DD8698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99D6F1C4AF98C00DD8698 /* Assets.xcassets */; };
@@ -21,8 +24,12 @@
 /* Begin PBXFileReference section */
 		004F37D675CCE83CAB81BA23 /* Pods-Subte.io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subte.io.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io.debug.xcconfig"; sourceTree = "<group>"; };
 		7CB6BC621D10D002003A2CAD /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		7CB6BC641D10D301003A2CAD /* StatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		7CB6BC661D10D47D003A2CAD /* SubwayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayService.swift; sourceTree = "<group>"; };
+		7CB6BC6A1D10F19C003A2CAD /* PassbookCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassbookCollectionViewLayout.swift; sourceTree = "<group>"; };
+		7CB6BC6C1D10F1BC003A2CAD /* PassbookCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassbookCollectionViewLayout.h; sourceTree = "<group>"; };
+		7CB6BC6F1D10F6B2003A2CAD /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		7CB6BC711D10F84A003A2CAD /* LineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCell.swift; sourceTree = "<group>"; };
+		7CB6BC731D110CA2003A2CAD /* UIView_Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Borders.swift; sourceTree = "<group>"; };
 		7CB99D651C4AF98C00DD8698 /* Subte.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subte.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB99D681C4AF98C00DD8698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB99D6D1C4AF98C00DD8698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				7CB6BC621D10D002003A2CAD /* TabBarController.swift */,
-				7CB6BC641D10D301003A2CAD /* StatusTableViewController.swift */,
+				7CB6BC6F1D10F6B2003A2CAD /* StatusViewController.swift */,
+				7CB6BC711D10F84A003A2CAD /* LineCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -69,6 +77,16 @@
 				7CB6BC661D10D47D003A2CAD /* SubwayService.swift */,
 			);
 			name = services;
+			sourceTree = "<group>";
+		};
+		7CB6BC6E1D10F216003A2CAD /* components */ = {
+			isa = PBXGroup;
+			children = (
+				7CB6BC6A1D10F19C003A2CAD /* PassbookCollectionViewLayout.swift */,
+				7CB6BC6C1D10F1BC003A2CAD /* PassbookCollectionViewLayout.h */,
+				7CB6BC731D110CA2003A2CAD /* UIView_Borders.swift */,
+			);
+			name = components;
 			sourceTree = "<group>";
 		};
 		7CB99D5C1C4AF98C00DD8698 = {
@@ -93,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				7CB99D681C4AF98C00DD8698 /* AppDelegate.swift */,
+				7CB6BC6E1D10F216003A2CAD /* components */,
 				FCA067141D10D58E009C6524 /* model */,
 				7CB6BC611D10CF5E003A2CAD /* services */,
 				7CB6BC5F1D10CF45003A2CAD /* view */,
@@ -244,10 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB6BC651D10D301003A2CAD /* StatusTableViewController.swift in Sources */,
+				7CB6BC741D110CA2003A2CAD /* UIView_Borders.swift in Sources */,
+				7CB6BC701D10F6B2003A2CAD /* StatusViewController.swift in Sources */,
+				7CB6BC721D10F84A003A2CAD /* LineCell.swift in Sources */,
 				7CB6BC631D10D002003A2CAD /* TabBarController.swift in Sources */,
 				7CB6BC671D10D47D003A2CAD /* SubwayService.swift in Sources */,
 				7CB99D691C4AF98C00DD8698 /* AppDelegate.swift in Sources */,
+				7CB6BC6B1D10F19C003A2CAD /* PassbookCollectionViewLayout.swift in Sources */,
 				FCA067161D10D59D009C6524 /* SubwayLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

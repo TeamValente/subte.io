@@ -7,21 +7,20 @@
 //
 
 import Foundation
+import UIColor_Hex_Swift
 
-class SubwayLine
-{
-
-
-    var lineName: String
-    var lineStatus: String
-    var lineFrequency: String
+class SubwayLine {
     
+    let lineName: String
+    let lineStatus: String
+    let lineFrequency: String
+    let lineColor: UIColor
     
-    init(name: String, status: String, frequency: String)
-    {
+    init(name: String, status: String, frequency: String, color: UIColor) {
         self.lineName = name
         self.lineStatus = status
         self.lineFrequency = frequency
+        self.lineColor = color
     }
     
     
