@@ -6,39 +6,33 @@
     </dependencies>
     <scenes>
         <!--Estado-->
-        <scene sceneID="bVm-g2-fi6">
+        <scene sceneID="okf-Dv-pCL">
             <objects>
-                <collectionViewController id="ij7-6C-9zn" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gAu-oS-b2A">
+                <tableViewController id="SQB-tt-xio" customClass="StatusTableViewController" customModule="Subte_io" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DSa-MX-Fbr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WAm-5h-EBm">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dkf-J8-xeU">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Z5l-HV-6QE">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5l-HV-6QE" id="pTc-jp-M96">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="ij7-6C-9zn" id="NBO-2h-5OP"/>
-                            <outlet property="delegate" destination="ij7-6C-9zn" id="8lw-AR-F8l"/>
+                            <outlet property="dataSource" destination="SQB-tt-xio" id="Nyg-i1-KMZ"/>
+                            <outlet property="delegate" destination="SQB-tt-xio" id="Rjs-Xw-VV0"/>
                         </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Estado" id="xZl-6b-QMO"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ljQ-hQ-ubb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Estado" id="h8l-ud-eNp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIl-tr-m9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="77"/>
+            <point key="canvasLocation" x="1117" y="-132"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="hk2-ch-kps">
@@ -57,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rar-Ge-3yX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="779"/>
+            <point key="canvasLocation" x="1117" y="579"/>
         </scene>
         <!--Acerca de-->
         <scene sceneID="9xk-5b-H4n">
@@ -86,7 +80,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYp-4L-e3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="1482"/>
+            <point key="canvasLocation" x="1117" y="1328"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1Bd-xd-ITi">
@@ -98,14 +92,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ij7-6C-9zn" kind="relationship" relationship="viewControllers" id="bMZ-aM-sTT"/>
+                        <segue destination="SQB-tt-xio" kind="relationship" relationship="viewControllers" id="cnn-0r-PTx"/>
                         <segue destination="N55-Gs-lO7" kind="relationship" relationship="viewControllers" id="OQq-5u-7Mo"/>
                         <segue destination="98Q-xR-Vbp" kind="relationship" relationship="viewControllers" id="bck-vy-CJB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKN-cS-vfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="399"/>
+            <point key="canvasLocation" x="319" y="579"/>
         </scene>
     </scenes>
 </document>
