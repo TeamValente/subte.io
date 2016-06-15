@@ -11,6 +11,7 @@ import UIKit
 class LineCell: UICollectionViewCell {
     
     @IBOutlet weak var lineName: UILabel!
+    @IBOutlet weak var lineState: UILabel!
     @IBOutlet weak var backgroundLine: UIView!
     
 }

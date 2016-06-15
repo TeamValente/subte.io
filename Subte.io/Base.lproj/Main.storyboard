@@ -52,11 +52,17 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LineName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="6Cx-V5-XU4">
-                                                    <rect key="frame" x="40.5" y="0.0" width="119" height="64"/>
+                                                    <rect key="frame" x="40" y="0.0" width="119" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="64" id="qS5-Pe-5LA"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="oOo-hW-G0h">
+                                                    <rect key="frame" x="75.5" y="64" width="49.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -68,8 +74,10 @@
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6Cx-V5-XU4" secondAttribute="bottom" constant="20" id="JDv-5v-wEP"/>
                                             <constraint firstItem="6Cx-V5-XU4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gr4-2Q-5jq" secondAttribute="leading" constant="20" id="KCQ-ie-PvF"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Cx-V5-XU4" secondAttribute="trailing" constant="20" id="KoO-Sx-Yle"/>
+                                            <constraint firstItem="oOo-hW-G0h" firstAttribute="top" secondItem="6Cx-V5-XU4" secondAttribute="bottom" id="THm-wy-j7y"/>
                                             <constraint firstItem="6Cx-V5-XU4" firstAttribute="centerX" secondItem="gr4-2Q-5jq" secondAttribute="centerX" id="WyY-w3-KfE"/>
                                             <constraint firstItem="R0A-C8-waY" firstAttribute="top" secondItem="gr4-2Q-5jq" secondAttribute="topMargin" constant="-5" id="XqY-3M-tF3"/>
+                                            <constraint firstItem="oOo-hW-G0h" firstAttribute="centerX" secondItem="gr4-2Q-5jq" secondAttribute="centerX" id="g43-fi-NvU"/>
                                             <constraint firstItem="R0A-C8-waY" firstAttribute="leading" secondItem="gr4-2Q-5jq" secondAttribute="leadingMargin" constant="-5" id="ji7-X1-E03"/>
                                             <constraint firstItem="6Cx-V5-XU4" firstAttribute="top" secondItem="gr4-2Q-5jq" secondAttribute="top" id="lxv-hj-V4f"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="R0A-C8-waY" secondAttribute="bottom" constant="-5" id="wrT-wa-Oeb"/>
@@ -83,9 +91,15 @@
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JDv-5v-wEP"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <outlet property="backgroundLine" destination="R0A-C8-waY" id="EAR-Yb-DgN"/>
                                             <outlet property="lineName" destination="6Cx-V5-XU4" id="pec-V5-KZK"/>
+                                            <outlet property="lineState" destination="oOo-hW-G0h" id="hx6-RM-KO2"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

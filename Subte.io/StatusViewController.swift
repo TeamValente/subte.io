@@ -66,7 +66,8 @@ class StatusViewController: UIViewController, PassbookCollectionViewLayoutDelega
         
         let currentItem = listadoLineas[indexPath.item]
         
-        cell.lineName?.text = "Linea \(currentItem.lineName)"
+        cell.lineName.text = "Linea \(currentItem.lineName)"
+        cell.lineState.text = "Estado de la línea: \(currentItem.lineStatus)"
         cell.backgroundLine.backgroundColor = currentItem.lineColor
         
         return cell
