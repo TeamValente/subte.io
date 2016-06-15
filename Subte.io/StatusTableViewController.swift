@@ -12,6 +12,18 @@ class StatusTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let servicioSubte = SubwayService()
+        
+        let lineas = servicioSubte.getSubwayLines { (SubwayService) -> () in
+            if let lines = SubwayService {
+                for myLine in lines {
+                    print(myLine.lineName)
+                }
+              }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

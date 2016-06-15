@@ -15,6 +15,7 @@
 		7CB99D6E1C4AF98C00DD8698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99D6C1C4AF98C00DD8698 /* Main.storyboard */; };
 		7CB99D701C4AF98C00DD8698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99D6F1C4AF98C00DD8698 /* Assets.xcassets */; };
 		7CB99D731C4AF98C00DD8698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99D711C4AF98C00DD8698 /* LaunchScreen.storyboard */; };
+		FCA067161D10D59D009C6524 /* SubwayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA067151D10D59D009C6524 /* SubwayLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7CB99D741C4AF98C00DD8698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F354F30E8C7A45371B20ABC /* Pods-Subte.io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subte.io.release.xcconfig"; path = "Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io.release.xcconfig"; sourceTree = "<group>"; };
 		F6A7CA5FAEE34BACC676CA67 /* Pods_Subte_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subte_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA067151D10D59D009C6524 /* SubwayLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				7CB99D681C4AF98C00DD8698 /* AppDelegate.swift */,
+				FCA067141D10D58E009C6524 /* model */,
 				7CB6BC611D10CF5E003A2CAD /* services */,
 				7CB6BC5F1D10CF45003A2CAD /* view */,
 				7CB99D6C1C4AF98C00DD8698 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FCA067141D10D58E009C6524 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FCA067151D10D59D009C6524 /* SubwayLine.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,12 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CB99D771C4AF98C00DD8698 /* Build configuration list for PBXNativeTarget "Subte.io" */;
 			buildPhases = (
-				8AAB168EF27328386BBA9744 /* 📦 Check Pods Manifest.lock */,
+				8AAB168EF27328386BBA9744 /* [CP] Check Pods Manifest.lock */,
 				7CB99D611C4AF98C00DD8698 /* Sources */,
 				7CB99D621C4AF98C00DD8698 /* Frameworks */,
 				7CB99D631C4AF98C00DD8698 /* Resources */,
-				2E5E0DEE5DB48161D07D748A /* 📦 Embed Pods Frameworks */,
-				8BC55038650629945A02B669 /* 📦 Copy Pods Resources */,
+				2E5E0DEE5DB48161D07D748A /* [CP] Embed Pods Frameworks */,
+				8BC55038650629945A02B669 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,7 +156,7 @@
 				TargetAttributes = {
 					7CB99D641C4AF98C00DD8698 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = HLY49RTLRG;
+						DevelopmentTeam = M28HMKLN5F;
 					};
 				};
 			};
@@ -181,14 +192,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E5E0DEE5DB48161D07D748A /* 📦 Embed Pods Frameworks */ = {
+		2E5E0DEE5DB48161D07D748A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,14 +207,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8AAB168EF27328386BBA9744 /* 📦 Check Pods Manifest.lock */ = {
+		8AAB168EF27328386BBA9744 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,14 +222,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8BC55038650629945A02B669 /* 📦 Copy Pods Resources */ = {
+		8BC55038650629945A02B669 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +248,7 @@
 				7CB6BC631D10D002003A2CAD /* TabBarController.swift in Sources */,
 				7CB6BC671D10D47D003A2CAD /* SubwayService.swift in Sources */,
 				7CB99D691C4AF98C00DD8698 /* AppDelegate.swift in Sources */,
+				FCA067161D10D59D009C6524 /* SubwayLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +362,9 @@
 			baseConfigurationReference = 004F37D675CCE83CAB81BA23 /* Pods-Subte.io.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Subte.io/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "marianomolina.xyz.Subte-io";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,7 +376,9 @@
 			baseConfigurationReference = 9F354F30E8C7A45371B20ABC /* Pods-Subte.io.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Subte.io/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "marianomolina.xyz.Subte-io";
 				PRODUCT_NAME = "$(TARGET_NAME)";
