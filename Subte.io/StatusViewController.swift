@@ -18,13 +18,12 @@ class StatusViewController: UIViewController, PassbookCollectionViewLayoutDelega
     
     
     // MARK: - data
+    let servicioSubte = SubwayService()
     var listadoLineas = [SubwayLine]()
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let servicioSubte = SubwayService()
         
         _ = servicioSubte.getSubwayLines { (SubwayService) -> () in
             if let lines = SubwayService {
@@ -69,6 +68,10 @@ class StatusViewController: UIViewController, PassbookCollectionViewLayoutDelega
         cell.lineName.text = "Linea \(currentItem.lineName)"
         cell.lineState.text = "Estado de la línea: \(currentItem.lineStatus)"
         cell.backgroundLine.backgroundColor = currentItem.lineColor
+        
+//        let fq = servicioSubte.calculateFrequency(currentItem.lineFrequency)
+//        
+//        print("Frequencia \(fq)")
         
         return cell
     }
