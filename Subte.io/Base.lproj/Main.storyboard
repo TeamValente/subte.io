@@ -58,8 +58,19 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahU-Hh-70x">
-                                                            <rect key="frame" x="0.0" y="85.5" width="194" height="108.5"/>
+                                                            <rect key="frame" x="0.0" y="85" width="194" height="108.5"/>
+                                                            <subviews>
+                                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-qM-jbr">
+                                                                    <rect key="frame" x="5" y="5" width="184" height="98.5"/>
+                                                                </mapView>
+                                                            </subviews>
                                                             <color key="backgroundColor" red="0.92054463612564097" green="0.92054463612564097" blue="0.92054463612564097" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="ZIh-qM-jbr" secondAttribute="bottom" constant="5" id="GET-dG-Qi0"/>
+                                                                <constraint firstItem="ZIh-qM-jbr" firstAttribute="leading" secondItem="ahU-Hh-70x" secondAttribute="leading" constant="5" id="Gn6-Gb-TeY"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ZIh-qM-jbr" secondAttribute="trailing" constant="5" id="cGF-6G-1zs"/>
+                                                                <constraint firstItem="ZIh-qM-jbr" firstAttribute="top" secondItem="ahU-Hh-70x" secondAttribute="top" constant="5" id="ujo-lg-WNG"/>
+                                                            </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="8"/>
@@ -114,6 +125,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="backgroundLine" destination="R0A-C8-waY" id="EAR-Yb-DgN"/>
+                                            <outlet property="lineMap" destination="ZIh-qM-jbr" id="7Tp-Bl-oE6"/>
                                             <outlet property="lineName" destination="6Cx-V5-XU4" id="pec-V5-KZK"/>
                                             <outlet property="lineState" destination="oOo-hW-G0h" id="hx6-RM-KO2"/>
                                         </connections>

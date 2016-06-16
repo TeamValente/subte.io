@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import MapKit
 
 class LineCell: UICollectionViewCell {
     
     @IBOutlet weak var lineName: UILabel!
     @IBOutlet weak var lineState: UILabel!
     @IBOutlet weak var backgroundLine: UIView!
+    @IBOutlet weak var lineMap: MKMapView!
     
 }
