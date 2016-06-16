@@ -10,12 +10,11 @@ target 'Subte.io' do
 	pod 'UIColor_Hex_Swift'
 	pod 'SwiftyJSON'
 	pod 'Alamofire'
-	## Pods a agregar
-	#pod 'Firebase/Core'
+	pod 'Firebase/Core'
+    pod 'Firebase'
 	#pod 'Firebase/AdMob'
-	#pod 'Firebase'
 	#pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
-    #pod 'Fabric'
-	#pod 'Crashlytics'
+    pod 'Fabric'
+	pod 'Crashlytics'
 
 end

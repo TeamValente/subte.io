@@ -69,9 +69,9 @@ class StatusViewController: UIViewController, PassbookCollectionViewLayoutDelega
         cell.lineState.text = "Estado de la línea: \(currentItem.lineStatus)"
         cell.backgroundLine.backgroundColor = currentItem.lineColor
         
-//        let fq = servicioSubte.calculateFrequency(currentItem.lineFrequency)
-//        
-//        print("Frequencia \(fq)")
+        let fq = servicioSubte.calculateFrequency(currentItem.lineFrequency)
+        
+        print("Frequencia \(fq)")
         
         return cell
     }

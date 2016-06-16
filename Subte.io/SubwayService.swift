@@ -105,18 +105,21 @@ class SubwayService {
         return color!
     }
    
-    /**
+    
     func calculateFrequency(strFrequency: String) -> String {
-        var frequency = Double(strFrequency)
+        var frequency = "--"
         
-        if frequency != 0.0 {
-            frequency = frequency! / 60.0;
-        } else {
-            frequency = 0.0
+        if let df = Double(strFrequency) {
+            if df != 0.0 {
+                
+                let rdf = (round((df / 60.0)*1000) / 1000)
+
+                frequency = "\(rdf)"
+            }
         }
         
         return "\(frequency)"
     }
-     */
+
     
 }
