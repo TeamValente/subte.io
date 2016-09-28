@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        servicioSubte.getSubwayLines { (lines) in
+        servicioSubte.fetch { (lines) in
             if let list = lines {
                 self.lineLists = list
                 

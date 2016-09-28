@@ -15,8 +15,12 @@ struct SubwayServices {
     
     let endPointUrl = "http://www.metrovias.com.ar/Subterraneos/Estado?site=Metrovias"
     
-    // getLines
-    func getSubwayLines(callback: @escaping ([SubwayLine]?) -> ()) {
+    /**
+     Fetch data from API.
+
+     - Parameter callback: return `SubwayLine` collection.
+     */
+    func fetch(callback: @escaping ([SubwayLine]?) -> ()) {
         
         Alamofire.request(endPointUrl).validate().responseJSON { response in
             
@@ -44,15 +48,19 @@ struct SubwayServices {
     }
     
     
-    // calculateFrequency
+    /**
+     Calculate Line Frequency.
+     
+     - Parameter strFrequency: `String`.
+     
+     - Returns: `String` frequency.
+     */
     func calculateFrequency(strFrequency: String) -> String {
         var frequency = "--"
         
         if let df = Double(strFrequency) {
             if df != 0.0 {
-                
                 let rdf = (round((df / 60.0)*1000) / 1000)
-                
                 frequency = "\(rdf)"
             }
         }
@@ -61,7 +69,13 @@ struct SubwayServices {
     }
     
     
-    // jsonParser
+    /**
+     Parse JSON data.
+     
+     - Parameter json: `json` object from network.
+     
+     - Returns: `SubwayLine` objects collection.
+     */
     private func jsonParser(json: JSON) -> [SubwayLine] {
         var listadoLineas = [SubwayLine]()
         
@@ -82,7 +96,13 @@ struct SubwayServices {
     }
     
     
-    // getLineColor
+    /**
+     Set Color for Line.
+     
+     - Parameter lineName: `String`.
+     
+     - Returns: `UIColor` line color.
+     */
     private func getLineColor(lineName: String) -> UIColor {
         var color: UIColor?
         
