@@ -10,14 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    // MARK: Controller Properties
     let servicioSubte = SubwayServices()
     var lineLists = [SubwayLine]()
     
+    
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
         servicioSubte.fetch { (lines) in
             if let list = lines {
                 self.lineLists = list
@@ -25,7 +26,6 @@ class ViewController: UIViewController {
                 print("Listado: \(self.lineLists)")
             }
         }
-        
     }
 
     override func didReceiveMemoryWarning() {

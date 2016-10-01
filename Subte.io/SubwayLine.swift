@@ -9,7 +9,7 @@
 import Foundation
 import UIColor_Hex_Swift
 
-struct SubwayLine {
+class SubwayLine {
     let lineName: String
     let lineStatus: String
     let lineFrequency: String
