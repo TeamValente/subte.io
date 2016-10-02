@@ -55,8 +55,13 @@ class StatusTableViewController: UITableViewController {
         cell.lineName.text = line.lineName
         cell.lineContainer.backgroundColor = line.lineColor
         cell.lineContainer.layer.borderColor = line.lineColor.cgColor
-        cell.lineStatusMessage.text = line.lineStatus
         cell.lineFrequency.text = line.lineFrequency
+        
+        cell.lineStatusMessage.text = line.lineStatus
+        
+        if line.lineStatus != "Normal" {
+            cell.lineStatusMessage.textColor = UIColor.red
+        }
         
         return cell
     }
