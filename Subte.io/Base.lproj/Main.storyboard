@@ -15,6 +15,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="727-9A-gFe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98956670400000002" green="0.80296463360000003" blue="0.20692284320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.98956670400000002" green="0.80296463360000003" blue="0.20692284320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -51,9 +56,11 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.92054463610000004" green="0.92054463610000004" blue="0.92054463610000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="JVL-j2-kye"/>
                                                 <constraint firstItem="Zos-Om-c5E" firstAttribute="centerY" secondItem="pxO-dF-iaW" secondAttribute="centerY" id="cN4-RQ-omN"/>
                                                 <constraint firstItem="Zos-Om-c5E" firstAttribute="centerX" secondItem="pxO-dF-iaW" secondAttribute="centerX" id="eLe-mT-Kzv"/>
                                                 <constraint firstItem="Zos-Om-c5E" firstAttribute="leading" secondItem="pxO-dF-iaW" secondAttribute="leading" constant="15" id="eaA-pJ-7Kl"/>
+                                                <constraint firstAttribute="height" constant="50" id="hAj-k4-DBY"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -90,7 +97,6 @@
                                         <constraint firstAttribute="leadingMargin" secondItem="pxO-dF-iaW" secondAttribute="leading" id="AdL-aP-Oz2"/>
                                         <constraint firstAttribute="topMargin" secondItem="PbS-s0-rIc" secondAttribute="top" id="B1m-D6-ZvZ"/>
                                         <constraint firstItem="PbS-s0-rIc" firstAttribute="leading" secondItem="e9Q-Xg-TVw" secondAttribute="trailing" constant="3.6666666666666288" id="CHA-Zp-4yu"/>
-                                        <constraint firstAttribute="trailing" secondItem="pxO-dF-iaW" secondAttribute="trailing" constant="356" id="Ecx-cd-VPe"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="bri-AV-VMG" secondAttribute="bottom" constant="3.6666666666666714" id="TPz-lM-rQN"/>
                                         <constraint firstAttribute="topMargin" secondItem="pxO-dF-iaW" secondAttribute="top" id="YGU-8R-7zq"/>
                                         <constraint firstItem="e9Q-Xg-TVw" firstAttribute="leading" secondItem="pxO-dF-iaW" secondAttribute="trailing" constant="16" id="Z8z-JT-ExV"/>
