@@ -83,7 +83,7 @@ struct SubwayServices {
             
             let lineName = subJson["LineName"].stringValue
             let lineStatus = subJson["LineStatus"].stringValue
-            let lineFrequency = subJson["LineFrequency"].stringValue
+            let lineFrequency = calculateFrequency(strFrequency: subJson["LineFrequency"].stringValue)
             let lineColor = getLineColor(lineName: subJson["LineName"].stringValue)
             
             //Cargo el punto

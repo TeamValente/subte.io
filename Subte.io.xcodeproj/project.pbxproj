@@ -15,6 +15,8 @@
 		7CA016D41D9B38AE004567DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA016D21D9B38AE004567DB /* LaunchScreen.storyboard */; };
 		7CC018041D9B415400C1A898 /* SubwayServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC018031D9B415400C1A898 /* SubwayServices.swift */; };
 		7CC018071D9B57B500C1A898 /* SubwayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC018061D9B57B500C1A898 /* SubwayLine.swift */; };
+		7CF987F51DA0BA2800FCC55F /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF987F41DA0BA2800FCC55F /* StatusTableViewController.swift */; };
+		7CF987F71DA0BC6B00FCC55F /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF987F61DA0BC6B00FCC55F /* StatusTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7CA016D51D9B38AE004567DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC018031D9B415400C1A898 /* SubwayServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayServices.swift; sourceTree = "<group>"; };
 		7CC018061D9B57B500C1A898 /* SubwayLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayLine.swift; sourceTree = "<group>"; };
+		7CF987F41DA0BA2800FCC55F /* StatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
+		7CF987F61DA0BC6B00FCC55F /* StatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 		CB4917F45CA3B9A77703812C /* Pods_Subte_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subte_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9256A531EBE81ADCC503AA /* Pods-Subte.io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subte.io.release.xcconfig"; path = "Pods/Target Support Files/Pods-Subte.io/Pods-Subte.io.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				7CA016CB1D9B38AE004567DB /* ViewController.swift */,
+				7CF987F41DA0BA2800FCC55F /* StatusTableViewController.swift */,
+				7CF987F61DA0BC6B00FCC55F /* StatusTableViewCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -254,7 +260,9 @@
 				7CA016CC1D9B38AE004567DB /* ViewController.swift in Sources */,
 				7CA016CA1D9B38AE004567DB /* AppDelegate.swift in Sources */,
 				7CC018071D9B57B500C1A898 /* SubwayLine.swift in Sources */,
+				7CF987F71DA0BC6B00FCC55F /* StatusTableViewCell.swift in Sources */,
 				7CC018041D9B415400C1A898 /* SubwayServices.swift in Sources */,
+				7CF987F51DA0BA2800FCC55F /* StatusTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
