@@ -61,6 +61,8 @@ class StatusTableViewController: UITableViewController {
         
         if line.lineStatus != "Normal" {
             cell.lineStatusMessage.textColor = UIColor.red
+        } else {
+            cell.lineStatusMessage.textColor = UIColor(red:0.41, green:0.86, blue:0.36, alpha:1.00)
         }
         
         return cell

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EFh-b7-lfX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EFh-b7-lfX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,25 +33,27 @@
             </objects>
             <point key="canvasLocation" x="-26" y="338"/>
         </scene>
-        <!--Status Table View Controller-->
+        <!--Estado-->
         <scene sceneID="vv8-oQ-xJL">
             <objects>
                 <tableViewController id="VX6-nr-Ufv" customClass="StatusTableViewController" customModule="Subte_io" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="YnM-Ln-1Ku">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="70" id="PKF-ma-YI4" customClass="StatusTableViewCell" customModule="Subte_io" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="414" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="85" id="PKF-ma-YI4" customClass="StatusTableViewCell" customModule="Subte_io" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PKF-ma-YI4" id="wdY-1F-ZxT">
-                                    <frame key="frameInset" width="414" height="69.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxO-dF-iaW">
+                                            <rect key="frame" x="8" y="17" width="50" height="50"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zos-Om-c5E">
+                                                    <rect key="frame" x="15" y="13" width="20" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -72,41 +77,46 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado de la Línea:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9Q-Xg-TVw">
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frecuencia de trenes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bri-AV-VMG">
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-s0-rIc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-s0-rIc">
+                                            <rect key="frame" x="74" y="29" width="293" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1I-DP-2hL">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Frecuencia de trenes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bri-AV-VMG">
+                                            <rect key="frame" x="74" y="50" width="144" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1I-DP-2hL">
+                                            <rect key="frame" x="226" y="50" width="36" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Estado de la Línea:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e9Q-Xg-TVw">
+                                            <rect key="frame" x="74" y="8" width="293" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="leadingMargin" secondItem="pxO-dF-iaW" secondAttribute="leading" id="AdL-aP-Oz2"/>
-                                        <constraint firstAttribute="topMargin" secondItem="PbS-s0-rIc" secondAttribute="top" id="B1m-D6-ZvZ"/>
-                                        <constraint firstItem="PbS-s0-rIc" firstAttribute="leading" secondItem="e9Q-Xg-TVw" secondAttribute="trailing" constant="3.6666666666666288" id="CHA-Zp-4yu"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="bri-AV-VMG" secondAttribute="bottom" constant="3.6666666666666714" id="TPz-lM-rQN"/>
-                                        <constraint firstAttribute="topMargin" secondItem="pxO-dF-iaW" secondAttribute="top" id="YGU-8R-7zq"/>
-                                        <constraint firstItem="e9Q-Xg-TVw" firstAttribute="leading" secondItem="pxO-dF-iaW" secondAttribute="trailing" constant="16" id="Z8z-JT-ExV"/>
-                                        <constraint firstItem="M1I-DP-2hL" firstAttribute="leading" secondItem="bri-AV-VMG" secondAttribute="trailing" constant="2.3333333333333712" id="ZhT-gV-p8d"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="M1I-DP-2hL" secondAttribute="bottom" constant="3.6666666666666714" id="ntz-Qj-hO8"/>
-                                        <constraint firstAttribute="topMargin" secondItem="e9Q-Xg-TVw" secondAttribute="top" id="rya-K4-578"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="pxO-dF-iaW" secondAttribute="bottom" constant="3.6666666666666714" id="sJY-ey-Rnc"/>
-                                        <constraint firstItem="bri-AV-VMG" firstAttribute="leading" secondItem="pxO-dF-iaW" secondAttribute="trailing" constant="16" id="zfv-AJ-svY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PbS-s0-rIc" secondAttribute="trailing" id="1W5-pO-xBG"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pxO-dF-iaW" secondAttribute="bottom" constant="9" id="GbM-fA-TH4"/>
+                                        <constraint firstItem="PbS-s0-rIc" firstAttribute="top" secondItem="e9Q-Xg-TVw" secondAttribute="bottom" id="Jym-VG-551"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="e9Q-Xg-TVw" secondAttribute="trailing" id="KF6-mK-Omg"/>
+                                        <constraint firstItem="pxO-dF-iaW" firstAttribute="leading" secondItem="wdY-1F-ZxT" secondAttribute="leadingMargin" id="UX4-Ui-M6A"/>
+                                        <constraint firstItem="pxO-dF-iaW" firstAttribute="top" secondItem="wdY-1F-ZxT" secondAttribute="topMargin" constant="9" id="VNp-22-6IJ"/>
+                                        <constraint firstItem="bri-AV-VMG" firstAttribute="top" secondItem="PbS-s0-rIc" secondAttribute="bottom" constant="5" id="W2X-EW-mVU"/>
+                                        <constraint firstItem="M1I-DP-2hL" firstAttribute="top" secondItem="PbS-s0-rIc" secondAttribute="bottom" constant="5" id="anN-cp-aid"/>
+                                        <constraint firstItem="M1I-DP-2hL" firstAttribute="leading" secondItem="bri-AV-VMG" secondAttribute="trailing" constant="8" id="cUE-ux-A4z"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="M1I-DP-2hL" secondAttribute="trailing" constant="105" id="cVS-lg-w0k"/>
+                                        <constraint firstAttribute="topMargin" secondItem="e9Q-Xg-TVw" secondAttribute="top" id="jrZ-sL-Knk"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <connections>
                                     <outlet property="lineContainer" destination="pxO-dF-iaW" id="k9y-r0-aEj"/>
                                     <outlet property="lineFrequency" destination="M1I-DP-2hL" id="Ef8-0c-8Xg"/>
@@ -120,11 +130,11 @@
                             <outlet property="delegate" destination="VX6-nr-Ufv" id="muQ-oM-Xdl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="kfH-co-3GQ"/>
+                    <navigationItem key="navigationItem" title="Estado" id="kfH-co-3GQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJ6-Pc-Q4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763.768115942029" y="336.68478260869568"/>
+            <point key="canvasLocation" x="762.39999999999998" y="335.98200899550227"/>
         </scene>
     </scenes>
 </document>

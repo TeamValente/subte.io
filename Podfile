@@ -10,11 +10,11 @@ target 'Subte.io' do
     pod 'UIColor_Hex_Swift', '~> 3.0'
     pod 'Alamofire', '~> 4.0'
     pod 'SwiftyJSON', :git => 'https://github.com/acegreen/SwiftyJSON.git', :branch => 'swift3'
-    
+
     #pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
-    #pod 'Fabric'
-    #pod 'Crashlytics'
-    
+    pod 'Fabric'
+    pod 'Crashlytics'
+
     # Firebase
     #pod 'Firebase'
 
